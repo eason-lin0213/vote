@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: green; /* 綠色背景 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#wrap {
+    background-color: #02F78E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    height: calc(100vh - 40px); /* 考慮上下邊距，調整高度 */
+    overflow-y: auto; /* 垂直滾動條 */
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.person {
+    background-color: #FFFFFF;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-wrap: break-word; /* 避免長選項導致溢出 */
+}
+
+.person h4 {
+    margin: 0;
+    color: black;
+}
+
+.person p {
+    margin: 0;
+    color: black;
+}
+
+.person button {
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.person button:hover {
+    background-color: yellow;
+}
+
+.clear {
+    clear: both;
+}
+
+#addOptionSection,
+#resultsSection {
+    margin: 20px 0;
+}
+
+#addOptionSection input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#addOptionSection button {
+    padding: 10px;
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addOptionSection button:hover {
+    background-color: #218838;
+}
+
+#resultsSection {
+    background-color: #318CE7; /* 藍色背景 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    bottom: 20px;
+}
+
+#resultsSection h2 {
+    color: #fff; /* 白色字體 */
+}
+
+#resultsContainer p {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+    margin: 5px 0;
+}
